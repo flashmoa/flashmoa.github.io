@@ -9,7 +9,7 @@
     function Mobile() { return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); }
     var flashWidth = 0;
     var mobileWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    flashWidth = Mobile() ? mobileWidth : 720;
+    flashWidth = Mobile() ? mobileWidth : 710;
     swfobject.embedSWF = function (url, cont, width, height) {
         var ruffle = window.RufflePlayer.newest(),
             player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
@@ -24,6 +24,6 @@
         ruffle2 = ruffle;
     }
 
-    swfobject.embedSWF(location.href.split('?')[1], 'ruffle', flashWidth, 560);
+    swfobject.embedSWF(location.href.split('?')[1], 'ruffle', flashWidth, 550);
 </script>
 </center>

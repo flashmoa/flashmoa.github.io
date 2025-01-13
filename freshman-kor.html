@@ -15,14 +15,14 @@ swfobject.embedSWF = function(url, cont, width, height){
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
             width: width,
             height: height,
-            style: 'width: 100%; height: ' + height + 'px',
+            style: 'width: 100%; height: 100%;',
         });
 
     function adjustHeight() {
         var viewportWidth = window.innerWidth;
         
         if (viewportWidth >= 768) {
-            player.style.height = &quot;100%&quot;;
+            player.style.height = &quot;600px&quot;;
         } else {
             var aspectRatio = 600 / 800; // 기본 높이(600) / 기본 너비(1000)
             player.style.height = (viewportWidth * aspectRatio) + &quot;px&quot;;
@@ -77,14 +77,14 @@ swfobject.embedSWF = function(url, cont, width, height){
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
             width: width,
             height: height,
-            style: 'width: 100%; height: ' + height + 'px',
+            style: 'width: 100%; height: 100%;',
         });
 
     function adjustHeight() {
         var viewportWidth = window.innerWidth;
         
         if (viewportWidth >= 768) {
-            player.style.height = "100%";
+            player.style.height = "600px";
         } else {
             var aspectRatio = 600 / 800; // 기본 높이(600) / 기본 너비(1000)
             player.style.height = (viewportWidth * aspectRatio) + "px";

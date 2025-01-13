@@ -22,7 +22,7 @@ swfobject.embedSWF = function(url, cont, width, height){
         var viewportWidth = window.innerWidth;
         
         if (viewportWidth >= 768) {
-            player.style.height = &quot;600px&quot;;
+            player.style.height = &quot;100%&quot;;
         } else {
             var aspectRatio = 600 / 800; // 기본 높이(600) / 기본 너비(1000)
             player.style.height = (viewportWidth * aspectRatio) + &quot;px&quot;;
@@ -84,7 +84,7 @@ swfobject.embedSWF = function(url, cont, width, height){
         var viewportWidth = window.innerWidth;
         
         if (viewportWidth >= 768) {
-            player.style.height = "600px";
+            player.style.height = "100%";
         } else {
             var aspectRatio = 600 / 800; // 기본 높이(600) / 기본 너비(1000)
             player.style.height = (viewportWidth * aspectRatio) + "px";

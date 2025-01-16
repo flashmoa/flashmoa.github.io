@@ -1,0 +1,134 @@
+<html>
+<head>
+<div id='ruffle'></div>
+<script src='https://unpkg.com/@ruffle-rs/ruffle'></script>
+<title>Tetris Jungle Flash Game</title>
+</head>
+<body>
+<div id="code_1736317811898" data-ke-type="html" data-source="<div id=&quot;ruffle&quot;></div>
+<script src=&quot;https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.12.30&quot;></script>
+<script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: 100%; height: ' + height + 'px',
+        });
+
+    function adjustHeight() {
+        var viewportWidth = window.innerWidth;
+        
+        if (viewportWidth >= 768) {
+            player.style.height = &quot;600px&quot;;
+        } else {
+            var aspectRatio = 600 / 800; // 기본 높이(600) / 기본 너비(1000)
+            player.style.height = (viewportWidth * aspectRatio) + &quot;px&quot;;
+        }
+    }
+
+   window.RufflePlayer.config = {
+            &quot;allowNetworking&quot;: &quot;all&quot;,
+            &quot;allowScriptAccess&quot;: true,
+            &quot;autoplay&quot;: &quot;auto&quot;,
+            &quot;letterbox&quot;: &quot;on&quot;,
+            &quot;contextMenu&quot;: &quot;on&quot;,
+            &quot;logLevel&quot;: &quot;error&quot;,
+            &quot;polyfills&quot;: false,
+            &quot;showSwfDownload&quot;: false,
+            &quot;maxExecutionDuration&quot;: 300,
+            &quot;openUrlMode&quot;: &quot;confirm&quot;,
+            &quot;forceAlign&quot;: true,
+            &quot;forceScale&quot;: true,
+            &quot;fontSources&quot;: [
+                &quot;https://flashmoa.github.io/Noto%20Sans.swf&quot;,
+                &quot;https://flashmoa.github.io/%E1%84%83%E1%85%A9%E1%86%AE%E1%84%8B%E1%85%AE%E1%86%B7.swf&quot;,
+                &quot;https://flashmoa.github.io/font/%E1%84%80%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B7.swf&quot;
+            ],
+            &quot;defaultFonts&quot;: {
+                &quot;sans&quot;: [
+                    &quot;굴림&quot;, &quot;나눔&quot;, &quot;Noto Sans&quot;, &quot;돋움&quot;, &quot;Arial&quot;, &quot;Helvetica&quot;, &quot;sans-serif&quot;
+                ]
+            },
+            &quot;playerVersion&quot;: null,
+            &quot;warnOnUnsupportedContent&quot;: false
+        };
+
+    // 초기 높이 조정
+    adjustHeight();
+
+    // 화면 크기 변경 시 높이 재조정
+    window.addEventListener(&quot;resize&quot;, adjustHeight);
+
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://flashmoa.github.io/immortal-yi-sun-shin-kor.swf', 'ruffle');
+</script>">
+<div id="ruffle">&nbsp;<ruffle-player width="undefined" height="undefined" style="width: 100%; height: 300px;"></ruffle-player></div>
+<script src="https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.12.30"></script>
+<script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: 100%; height: ' + height + 'px',
+        });
+
+    function adjustHeight() {
+        var viewportWidth = window.innerWidth;
+        
+        if (viewportWidth >= 768) {
+            player.style.height = "600px";
+        } else {
+            var aspectRatio = 600 / 800; // 기본 높이(600) / 기본 너비(1000)
+            player.style.height = (viewportWidth * aspectRatio) + "px";
+        }
+    }
+
+   window.RufflePlayer.config = {
+            "allowNetworking": "all",
+            "allowScriptAccess": true,
+            "autoplay": "auto",
+            "letterbox": "on",
+            "contextMenu": "on",
+            "logLevel": "error",
+            "polyfills": false,
+            "showSwfDownload": false,
+            "maxExecutionDuration": 300,
+            "openUrlMode": "confirm",
+            "forceAlign": true,
+            "forceScale": true,
+            "fontSources": [
+                "https://flashmoa.github.io/Noto%20Sans.swf",
+                "https://flashmoa.github.io/%E1%84%83%E1%85%A9%E1%86%AE%E1%84%8B%E1%85%AE%E1%86%B7.swf",
+                "https://flashmoa.github.io/font/%E1%84%80%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B7.swf"
+            ],
+            "defaultFonts": {
+                "sans": [
+                    "굴림", "나눔", "Noto Sans", "돋움", "Arial", "Helvetica", "sans-serif"
+                ]
+            },
+            "playerVersion": null,
+            "warnOnUnsupportedContent": false
+        };
+
+    // 초기 높이 조정
+    adjustHeight();
+
+    // 화면 크기 변경 시 높이 재조정
+    window.addEventListener("resize", adjustHeight);
+
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://flashmoa.github.io/immortal-yi-sun-shin-kor', 'ruffle');
+</script>
+</div>
+</body>
+</html>
